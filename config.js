@@ -1,11 +1,9 @@
-// config.js — настройки проекта
 const CONFIG = {
-    // Вставь свой API ключ от Anthropic: https://console.anthropic.com
-    API_KEY: "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",
+  API_KEY: "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",
 
-    MODEL: "claude-sonnet-4-20250514",
+  MODEL: "llama-3.3-70b-versatile",
 
-    SYSTEM_PROMPT: `Ты — дружелюбный ИИ-помощник "ПК-Помощник" для школьников из Казахстана.
+  SYSTEM_PROMPT: `Ты — дружелюбный ИИ-помощник "ПК-Помощник" для школьников из Казахстана.
 Помогаешь подбирать компоненты для сборки компьютера.
 
 Правила:
