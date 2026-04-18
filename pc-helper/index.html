@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ПК-Помощник для школьников</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+    <div class="app">
+
+        <!-- Шапка -->
+        <header class="header">
+            <div class="logo">💻</div>
+            <div class="header-text">
+                <h1>ПК-Помощник</h1>
+                <p>Подберу компьютер под твои задачи</p>
+            </div>
+            <div class="status">
+                <span class="dot"></span> онлайн
+            </div>
+        </header>
+
+        <!-- Быстрые кнопки -->
+        <div class="chips">
+            <button class="chip" onclick="sendChip('ПК для школы и учёбы')">📚 Для учёбы</button>
+            <button class="chip" onclick="sendChip('Игровой ПК')">🎮 Для игр</button>
+            <button class="chip" onclick="sendChip('ПК для рисования и дизайна')">🎨 Для дизайна</button>
+            <button class="chip" onclick="sendChip('Бюджет до 150000 тенге')">💰 До 150 000₸</button>
+            <button class="chip" onclick="sendChip('Что такое процессор и зачем он нужен?')">❓ Что такое CPU?</button>
+        </div>
+
+        <!-- Чат -->
+        <div class="messages" id="messages">
+            <!-- Приветственное сообщение -->
+            <div class="msg bot">
+                <div class="avatar">AI</div>
+                <div class="bubble">
+                    Привет! 👋 Я помогу тебе собрать компьютер.<br>
+                    Расскажи — для чего нужен ПК? Учёба, игры, творчество?<br>
+                    И какой бюджет? 💬
+                </div>
+            </div>
+        </div>
+
+        <!-- Поле ввода -->
+        <div class="input-area">
+            <textarea id="userInput"
+                      placeholder="Напиши свой вопрос..."
+                      rows="1"
+                      onkeydown="handleKey(event)"
+                      oninput="autoResize(this)"></textarea>
+            <button id="sendBtn" onclick="sendMessage()">
+                ➤
+            </button>
+        </div>
+
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
