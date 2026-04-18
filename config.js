@@ -1,7 +1,7 @@
 // config.js — настройки проекта
 const CONFIG = {
     // Вставь свой API ключ от Anthropic: https://console.anthropic.com
-    API_KEY: "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",
+    API_KEY: "sk-ant-api03-M0nLqZ3KUAnnRFPsZ-QqbyvYXa0rQ2x4RqvASTR340_8R0TYrRx1r6uLszq23afRIRGcfh3yCR5IFUarPebktw-E5G0bgAA",
 
     MODEL: "claude-sonnet-4-20250514",
 
